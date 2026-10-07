@@ -1,0 +1,10 @@
+UDHAYASTUDIOZ ROYAL GLASS FINAL V1
+
+- Royal midnight navy + champagne theme kept throughout.
+- Added Gallery, Testimonials and short About Us.
+- Separate collection pages for every requested category.
+- Cover image is a controlled 16:9 frame; all inside gallery images use a uniform 4:3 frame.
+- Desktop collection grid: 4 columns. Mobile collection grid: 2 columns.
+- Added dedicated Videos page and assets/videos folder.
+- Instagram header button and floating Instagram control corrected.
+- Missing images show clean dark placeholders until you add your files.

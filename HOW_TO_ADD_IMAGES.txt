@@ -1,0 +1,84 @@
+UDHAYASTUDIOZ ROYAL GLASS — IMAGE & VIDEO GUIDE
+
+1) MAIN HOME 3 IMAGES
+Folder: images/
+Files:
+- hero-1.jpg  = first main home slide
+- hero-2.jpg  = second main home slide
+- hero-3.jpg  = third main home slide
+Recommended: 1920x1080 or larger, landscape.
+
+Also put your logo here:
+- images/udhayastudioz-logo.png
+
+2) HOME GALLERY
+Folder: assets/images/gallery/
+Add:
+01.jpg, 02.jpg, 03.jpg, 04.jpg, 05.jpg, 06.jpg, 07.jpg, 08.jpg
+Recommended: same/similar landscape photos. The website keeps all tiles equal.
+
+3) ABOUT US IMAGE
+Folder: assets/images/about/
+Add:
+about.jpg
+Recommended: portrait or landscape image with the main subject clearly visible.
+
+4) PORTFOLIO COLLECTIONS
+Every collection has its own folder under assets/images/.
+Folders:
+- wedding
+- reception-engagement
+- bridal-groom
+- pre-wedding
+- baby-shower
+- birthday
+- puberty
+- salangai-pooja
+- maternity
+
+Inside each folder add:
+cover.jpg
+02.jpg
+03.jpg
+04.jpg
+05.jpg
+06.jpg
+07.jpg
+08.jpg
+09.jpg
+10.jpg
+11.jpg
+12.jpg
+
+cover.jpg is the large 16:9 collection cover.
+02.jpg–12.jpg are the uniform gallery images.
+
+5) VIDEOS
+Folder: assets/videos/
+Recommended file names:
+01-wedding.mp4
+02-reception.mp4
+03-pre-wedding.mp4
+04-family.mp4
+05-traditional.mp4
+06-highlight.mp4
+
+Open videos.html and replace each VIDEO placeholder with:
+<video controls playsinline preload="metadata">
+  <source src="assets/videos/01-wedding.mp4" type="video/mp4">
+</video>
+
+6) TESTIMONIALS
+Open index.html and search for:
+<section class="section" id="testimonials">
+Edit the 3 sample quotes, client names and event names.
+
+7) IMAGE SIZES / MOBILE
+Desktop collection pages use 4 equal columns.
+Mobile collection pages use 2 equal columns.
+Gallery uses 4 columns on desktop and 2 columns on mobile.
+Images use object-fit: cover so the grid remains aligned.
+
+8) IMPORTANT
+Do not rename the folders unless you also update the matching image paths in the HTML files.
+JPG/JPEG/PNG/WebP can be used for photos. If you change an extension, update the HTML path too.
