@@ -101,21 +101,28 @@ footer{border-top:1px solid rgba(213,177,106,.18);padding:18px 0}.footerin{displ
     }
 }
 
-/* Fix duplicate Instagram icons */
-.float-ig > svg,
-.float-ig svg,
-.float-ig .instagram-icon {
-    display: none !important;
-}
-
-/* Show only one Instagram camera icon */
-.float-ig::before {
-    content: "" !important;
-    display: block !important;
-    width: 29px !important;
-    height: 29px !important;
-    flex-shrink: 0;
+/* FIX: Floating Instagram button - single logo only */
+.float-ig {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    font-size: 0 !important;
+    background-image: url("../assets/images/instagram.png") !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
-    background-size: contain !important;
+    background-size: 34px 34px !important;
 }
+
+/* Remove all old icons inside the button */
+.float-ig svg,
+.float-ig img,
+.float-ig i,
+.float-ig .instagram-icon,
+.float-ig::before,
+.float-ig::after {
+    display: none !important;
+    content: none !important;
+    background-image: none !important;
+}
+
