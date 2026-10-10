@@ -65,5 +65,133 @@ footer{border-top:1px solid rgba(213,177,106,.18);padding:18px 0}.footerin{displ
     content: none !important;
 }
 
+/* =========================================
+   MOBILE FIX — ABOUT US + LOCATION / MAP
+   Desktop styles remain unchanged
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+  /* Prevent horizontal overflow inside these sections */
+  #about,
+  .about-section,
+  #location,
+  .location-section,
+  .map-section,
+  .contact-location {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow-x: clip;
+  }
+
+  #about *,
+  .about-section *,
+  #location *,
+  .location-section *,
+  .map-section *,
+  .contact-location * {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  /* About Us headings: allow text to fit the screen */
+  #about h1,
+  #about h2,
+  #about h3,
+  .about-section h1,
+  .about-section h2,
+  .about-section h3 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  /* Large cursive / decorative About Us text */
+  #about .script-text,
+  #about .about-script,
+  #about .about-title,
+  .about-section .script-text,
+  .about-section .about-script,
+  .about-section .about-title {
+    font-size: clamp(25px, 7vw, 42px);
+    line-height: 1.35;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  /* About Us paragraph spacing and readability */
+  #about p,
+  .about-section p {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+  }
+
+  /* Location heading and address */
+  #location h1,
+  #location h2,
+  #location h3,
+  .location-section h1,
+  .location-section h2,
+  .location-section h3,
+  .map-section h1,
+  .map-section h2,
+  .map-section h3,
+  .contact-location h1,
+  .contact-location h2,
+  .contact-location h3 {
+    font-size: clamp(25px, 7vw, 36px);
+    line-height: 1.25;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  #location p,
+  .location-section p,
+  .map-section p,
+  .contact-location p {
+    overflow-wrap: anywhere;
+    word-break: normal;
+    line-height: 1.65;
+  }
+
+  /* Keep the map and its container within the phone width */
+  #location iframe,
+  .location-section iframe,
+  .map-section iframe,
+  .contact-location iframe {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    border: 0;
+  }
+
+  #location .map-container,
+  .location-section .map-container,
+  .map-section .map-container,
+  .contact-location .map-container {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  /* Stop fixed-width cards from extending off-screen */
+  #location .location-card,
+  .location-section .location-card,
+  .map-section .location-card,
+  .contact-location .location-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+}
+
+
 
 
