@@ -100,3 +100,22 @@ footer{border-top:1px solid rgba(213,177,106,.18);padding:18px 0}.footerin{displ
         right: 14px;
     }
 }
+
+/* Fix duplicate Instagram icons */
+.float-ig > svg,
+.float-ig svg,
+.float-ig .instagram-icon {
+    display: none !important;
+}
+
+/* Show only one Instagram camera icon */
+.float-ig::before {
+    content: "" !important;
+    display: block !important;
+    width: 29px !important;
+    height: 29px !important;
+    flex-shrink: 0;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+}
