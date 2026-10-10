@@ -220,6 +220,36 @@ footer{border-top:1px solid rgba(213,177,106,.18);padding:18px 0}.footerin{displ
   }
 }
 
+/* Footer cleanup — remove logo and unwanted Instagram block */
+footer .footer-brand img,
+footer .social,
+footer .footer-social,
+footer .footer-instagram {
+  display: none !important;
+}
+
+/* Keep the copyright text aligned neatly */
+footer .footerin,
+footer .footer-brand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+footer .footer-brand span {
+  display: block;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Keep floating Instagram and WhatsApp buttons visible */
+.float-ig,
+.float-wa {
+  display: grid;
+}
+
+
 
 
 
