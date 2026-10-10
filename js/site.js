@@ -1,4 +1,4 @@
-const WHATSAPP='919677251528';
+const WHATSAPP='919710006033';
 const header=document.getElementById('header'); if(header) window.addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>35));
 const menu=document.getElementById('menu'),nav=document.getElementById('navlinks'); if(menu&&nav){menu.onclick=()=>nav.classList.toggle('open');document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')))}
 const slides=[...document.querySelectorAll('.slide')],dots=[...document.querySelectorAll('.hero-dot')];let current=0,timer;
